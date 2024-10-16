@@ -1,0 +1,282 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>UI-Design</title>
+        <style>
+        html{
+            zoom: 0.9;
+            cursor: default;
+            scroll-behavior: smooth;
+        }
+        .page1{
+            background-color: black;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            font-family: Montserrat sans-serif;
+        }
+        p{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        span{
+            color:  #FFB6B9;
+            opacity: 0;
+            display: inline-block;
+            animation: typewriter 0.5s forwards;
+        }
+        span:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        span:nth-child(2){
+            animation-delay: 0.3s;
+        }
+        @keyframes typewriter {
+  to {
+    opacity: 1;
+  }
+        }
+        
+        h1{
+            font-family: Abril-Fatface;
+            font-size: 100px;
+            color: white;
+            background-color: black;
+            padding: 100px 120px 0px 100px;
+            text-align: left;
+            line-height: 120px;
+            border-radius: 20px;}
+
+    
+        h2{
+    font-weight: lighter;
+    font-size: 42px;
+    padding-left: 20px;}
+
+        nav{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 90px;
+    
+}
+.nav-list{
+    display: inline-flex;
+    gap: 250px;
+    list-style-type: none;
+    
+}
+.nav-list li{
+    position: relative;
+}
+.nav-list li a{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    line-height: 1.5;
+    transition: 0.75s ease;
+}
+.nav-list li a:hover{
+    color: #FFB6B9;
+}
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    background-color: #FFB6B9;
+    bottom: -2px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-list a:hover::after {
+    width: 100%;
+  }
+.heading{
+    padding-bottom: 30px;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.br{
+        margin: 20px;
+    }
+    .box{
+        display: block;
+        text-decoration: none;
+        padding: 30px;
+        background-color: #A8DADC;
+        border-radius: 25px;
+        transition:transform 0.6s ease-in-out; 
+    }
+    .box:hover{
+        transform: scale(1.03);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+    .content{ 
+        display: flex;
+        align-items: center;
+        color: #FFB6B9;
+        width: 100%;
+    }
+    .content iframe{
+        flex-shrink: 0;
+        border-radius: 25px;
+        border-color: 4px #FFB6B9 solid;
+        transition:transform 0.6s ease;
+    }
+    .content iframe:hover{
+        
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+    .br-text {
+    margin-left: 70px;
+    color: black; 
+    max-width: 70%; }
+    .br-text p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+    }
+    .br-text h3{
+        font-size: 60px;
+        font-weight: lighter;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    section{
+        margin-bottom: 140px;
+    }
+    
+
+    .grid{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 50px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin-left: 60px;
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        background-color: #A8DADC;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        margin-top: 0px;
+        margin-right: 0;
+        padding: 30px 20px 0 20px;
+        width: 460px;
+    }
+    .text iframe{
+        border-radius: 25px;
+        border: #FFB6B9 4px solid;
+    }
+    .text p{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navigation-arrows {
+    display: flex;
+    justify-content: left;
+    align-items: right;
+    align-items: center;
+    gap: 50px;
+    margin-left: 80px;
+    margin-top: 40px; 
+}
+
+.back-arrow, .forward-arrow {
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #A8DADC;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-arrow:hover, .forward-arrow:hover {
+    background-color: #8dd6d9;
+    transform: scale(1.1); 
+}
+            </style>
+    </head>
+    <body>
+        <section class="page1">
+            <h1><span>User Interface</span> design is about <br>creating an experience, not <br>just a product.</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#digitising-gas-stove">Digitising Gas Stove</a></li>
+                    <li><a href="#sanatic-website-design">Sanatic Website Design</a></li>
+                    <li><a href="#upcoming-projects">Upcoming Projects</a></li>
+                </ul>
+            </section>
+            <section id="digitising-gas-stove">
+                
+                <div class="br">
+                    <a href="https://www.behance.net/gallery/209396291/Digitizing-the-Interface-of-an-Existing-Cooking-Range" class="box">
+                        <div class="content">
+                            <iframe src="https://drive.google.com/file/d/12VDQ71kry3CsARZgv-fvLVcj7bMnPbOV/preview" width="380" height="370" allow="autoplay"></iframe>
+                    <div class="br-text">
+                        <h3>Digitizing the Interface of an Existing Cooking Range</h3>
+                        <p>This project delves into reimagining the traditional cooking range by digitizing its interface to suit the multitasking needs of modern users. Through a series of observations and real-life scenarios involving my parents interacting with a regular stove, key pain points and opportunities for improvement were identified. Click to view detailed project on Behance.</p>
+                    </div></div></a>
+                </div>
+            </section>
+
+            <section id="sanatic-website-design">
+                
+                <div class="br">
+                    
+                    <a href="https://www.behance.net/gallery/200485769/Website-Design" class="box">
+                        <div class="content">       
+                            <iframe src="https://drive.google.com/file/d/1gP9D1h9OE8IW0zwTC5kYzJgpBS4PQLw0/preview" width="380" height="370" allow="autoplay"></iframe>
+                    <div class="br-text">
+                        <h3>High Fidelity Wireframe for Sanatic</h3>
+                        <p>Welcome to Sanatic, where the untamed spirit of nature meets the precision of high-performance sports gear. My brand is inspired by the dark, enigmatic beauty of the natural world, and our website design captures this essence, offering an immersive digital experience for adventurers and athletes alike. Click to view detailed project on Behance.</p>
+                    </div></div></a>
+                </div>
+            </section>
+
+            <section id="upcoming-projects">
+                <h1 class="heading">Upcoming Projects</h1>
+                <div class="grid">
+                    <div class="text">
+                <iframe src="https://drive.google.com/file/d/1jRNy3766toyz-XajCj_hiIwN_LLnTvHY/preview" width="400" height="390" allow="autoplay"></iframe>
+                <p class="abc">An app that brings adults a curated collection of retro shoes, providing an effortless shopping experience and personalized recommendations for timeless, classic styles.</p>
+                    </div>
+                    <div class="text">
+                        <iframe src="https://drive.google.com/file/d/1KdKTr9uNCHd8uUVy71glS7bFyjADKVK5/preview" width="400" height="390" allow="autoplay"></iframe>
+                        <p class="abc">Effortlessly browse menus, place quick orders, and track deliveries in real-time, enhancing the on-campus dining experience with convenience and user-friendly design.</p>
+                    </div>
+                    <div class="text">
+                        <iframe src="https://drive.google.com/file/d/1q329Wyxd-KyOxCR2Tgumf1PLbDwncWH3/preview" width="400" height="390" allow="autoplay"></iframe>
+                        <p class="abc">A comprehensive project focusing on user flow analysis, pain point identification, and journey mapping, culminating in the development of an intuitive smart door app.</p>
+                    </div>
+                    <div class="text">
+                        <iframe src="https://drive.google.com/file/d/1j8wAzOBshv0tylN_lfQUVwBy2JcgEcZv/preview" width="400" height="390" allow="autoplay"></iframe>
+                        <p class="abc">An engaging game where players pour matching color liquids into containers, unlocking vibrant themes and competing for high scores in a visually stunning environment.</p>
+                    </div>
+                    <div class="text">
+                        <iframe src="https://drive.google.com/file/d/1SAmGBQZtU5A1UPh_w0W5urjN6uoJNdZH/preview" width="400" height="390" allow="autoplay"></iframe>
+                        <p class="abc">A modern, minimalist portfolio wesbite with bold typography and clean lines, using soft neutral tones to reflect my creative, refined, and approachable design style.</p>
+                    </div>
+                </div>
+            </section><br><br>
+            <div class="navigation-arrows">
+                <a href="../index.html" class="back-arrow"><</a>
+                
+            </div>
+    </body>
+</html>

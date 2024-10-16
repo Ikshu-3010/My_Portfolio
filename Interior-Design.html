@@ -1,0 +1,292 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Interior-Design</title>
+        <style>
+        html{
+            zoom: 0.9;
+            cursor: default;
+            scroll-behavior: smooth;
+        }
+        .page1{
+            background-color: black;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            font-family: Montserrat sans-serif;
+        }
+        
+        h1{
+            font-family: Abril-Fatface;
+            font-size: 100px;
+            color: white;
+            background-color: black;
+            padding: 100px 120px 0px 100px;
+            text-align: left;
+            line-height: 120px;
+            border-radius: 20px;
+        }
+        span{
+            color:  #FFB6B9;
+            opacity: 0;
+            display: inline-block;
+            animation: typewriter 0.5s forwards;
+        }
+        span:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        span:nth-child(2){
+            animation-delay: 0.3s;
+        }
+        @keyframes typewriter {
+  to {
+    opacity: 1;
+  }
+}
+        nav{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 90px;
+    
+}
+        .nav-list{
+    display: inline-flex;
+    gap: 250px;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center; 
+}
+.nav-list li{
+    position: relative;}
+
+.nav-list li a{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    line-height: 1.5;
+    transition: 0.75s ease;
+}
+.nav-list li a:hover{
+    color: #FFB6B9;
+    border-bottom: 2px white;
+}
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    background-color: #FFB6B9;
+    bottom: -2px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-list a:hover::after {
+    width: 100%;
+  }
+.heading{
+    padding-bottom: 30px;
+    font-size: 75px;
+    font-weight: bold;}
+    
+    .mb{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding: 40px;
+        gap: 50px;
+    }
+    .mb iframe{
+        border: 4px #FFB6B9 solid;
+        transition: transform 0.6s ease;
+    }
+    .mb iframe:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .lr{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        gap: 50px;
+    }
+    .lr iframe{
+        border: #FFB6B9 4px solid;
+        transition: transform 0.6s ease;
+    }
+    .lr iframe:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .br{
+        margin: 20px;
+    }
+    .box{
+        display: block;
+        text-decoration: none;
+        padding: 30px;
+        background-color: #A8DADC;
+        border-radius: 25px;
+        transition:transform 0.6s ease-in-out; 
+    }
+    .box:hover{
+        transform: scale(1.);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+    .content{ 
+        display: flex;
+        align-items: center;
+        color: #FFB6B9;
+    }
+    .content iframe{
+        flex-shrink: 0;
+        border-radius: 25px;
+        border-color: 2px #FFB6B9 solid;
+        transition:transform 0.6s ease;
+    }
+    .content iframe:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+    .br-text {
+    margin-left: 70px;
+    color: black; 
+    max-width: 1000px; }
+    .br-text p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+    }
+    .br-text h3{
+        font-size: 70px;
+        font-weight: lighter;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .abt{
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        justify-content: center;
+        background-color: #A8DADC;
+        border-radius: 25px;
+        margin: 70px;
+        
+    }
+    .abt h3{
+        font-size: 70px;
+        font-weight: lighter;
+        padding-top: 40px;
+        opacity: 0; /* Initially hidden */
+        animation: fadeSlideIn 5s ease forwards;
+    }
+    @keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start 50px below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move to original position */
+    }
+}
+    .abt p{
+        font-size: 40px;
+        padding: 0 50px 50px 50px;
+        text-align: left;
+        font-weight: lighter;
+        opacity: 0;
+        animation: fadeSlideIn 5s ease forwards;
+    }
+
+    .navigation-arrows {
+    display: flex;
+    justify-content: left;
+    align-items: right;
+    align-items: center;
+    gap: 50px;
+    margin-left: 80px;
+    margin-top: 40px; /* Space above the arrows */
+}
+
+.back-arrow, .forward-arrow {
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #A8DADC;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-arrow:hover, .forward-arrow:hover {
+    background-color: #8dd6d9;
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+    
+    </style>
+    </head>
+    <body>
+        <section class="page1">
+            <h1><span>Interior design </span> begins where <br>imagination meets reality, no <br>matter your level of expertise.</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#masterbedroom">Master Bedroom</a></li>
+                    <li><a href="#livingroom">Living Room</a></li>
+                    <li><a href="#others">Others</a></li>
+                </ul>
+            </section>
+        <section id="masterbedroom">
+                <h1 class="heading">Master Bedroom</h1>
+                <div class="mb">
+                    <iframe src="https://drive.google.com/file/d/11VSg_iah_D-3rOmE2TN-xuc2Qn3Bs-xv/preview" width="640" height="360" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/18Gy7_AfkEPeIAjw-aJ7KRFStrxuq0Edl/preview" width="640" height="360" allow="autoplay"></iframe>
+                </div>
+        </section>
+
+        <section id="livingroom">
+            <h1 class="heading">Living Room</h1>
+            <div class="lr">
+                <iframe src="https://drive.google.com/file/d/1LSnsw2yIkoxbepBExWhbfykptzMb3RXo/preview" width="640" height="360" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1yAmANQOyEgcfyVcYxwfQC6omjl-kHye9/preview" width="640" height="360" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1skA2f6UfdKNTSO2mTLxPz781KXkfWSV5/preview" width="640" height="360" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1KISCPqVIV4e8uIsHnAEShY3QAIU4h1K0/preview" width="640" height="360" allow="autoplay"></iframe>
+            </div>
+        </section>
+
+
+        <section id="others">
+            <h1 class="heading">Others</h1>
+            <div class="br">
+                <a href="https://www.behance.net/gallery/192374449/Interior-Design" class="box">
+                    <div class="content">
+                <iframe src="https://drive.google.com/file/d/1Y7ZPEQ1NeCKV2F2b-qiMFTnBcA1iLmEO/preview" width="350" height="340" allow="autoplay"></iframe>
+                <div class="br-text">
+                    <h3>Bedroom</h3>
+                    <p>Explore my innovative interior design projects crafted using SketchUp and V-Ray. Each design reflects a unique blend of functionality and aesthetics, showcasing my ability to create immersive environments. Click to view detailed project on Behance.</p>
+                </div></div></a>
+            </div>
+        </section>
+            
+        </section>
+        <footer>
+            <section class="abt">
+                <h3>About the Interior Design works</h3>
+                <p>These interior design projects were developed after my first year of college during my internship at DSA, Bangalore. This month-long experience allowed me to apply my skills in real-world scenarios, enhancing my understanding of design principles and client needs. Each project reflects my growth and dedication to creating functional and aesthetically pleasing spaces.</p>
+            </section>
+        </footer>
+<br><br><br><br>
+        <div class="navigation-arrows">
+            <a href="../index.html" class="back-arrow"><</a>
+            <a href="Branding.html" class="forward-arrow">></a>
+        </div>
+    </div>
+
+    </body>
+</html>

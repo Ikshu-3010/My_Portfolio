@@ -1,0 +1,249 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Branding</title>
+        <style>
+            html{
+                zoom: 0.9;
+                scroll-behavior: smooth;
+                cursor: default;
+            }
+        .page1{
+            background-color: black;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            font-family: Montserrat sans-serif;
+        }
+        
+        h1{
+            font-family: Abril-Fatface;
+            font-size: 100px;
+            color: white;
+            background-color: black;
+            padding: 100px 120px 0px 100px;
+            text-align: left;
+            line-height: 120px;
+            border-radius: 20px;}
+        
+            nav{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding-bottom: 90px;
+        }
+        span{
+            color: #FFB6B9;
+            opacity: 0;
+            display: inline-block;
+            animation: typewriter 0.5s forwards;
+        }
+        span:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        span:nth-child(2){
+            animation-delay: 0.3s;
+        }
+        @keyframes typewriter {
+  to {
+    opacity: 1;
+  }
+}
+
+    .nav-list{
+        display: inline-flex;
+        gap: 250px;
+        list-style-type: none;
+        
+    }
+    .nav-list li{
+    position: relative;
+    }
+    .nav-list li a{
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        text-decoration: none;
+        line-height: 1.5;
+        transition: 0.75s ease;
+    }
+    .nav-list li a:hover{
+        color: #FFB6B9;
+    }
+    .nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    background-color: #FFB6B9;
+    bottom: -2px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-list a:hover::after {
+    width: 100%;
+  }
+
+    .heading{
+        padding-bottom: 30px;
+        font-size: 75px;
+        font-weight: bold;
+    }
+    .sanatic-img, p{
+        align-items: center;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        gap: 20px;
+    }
+    .sanatic-img iframe{
+        max-width: 10200px;
+        height: 430px;
+        border: #FFB6B9 4px solid;
+    }
+    .sanatic-img iframe:hover{
+        transform: scale(1.1);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .grid{
+        display: flex;
+        gap: 20px;
+        padding: 30px;
+        margin: 30px auto;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .grid iframe{
+        border: 4px #FFB6B9 solid;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .grid iframe:hover{
+        transform: scale(1.05);
+        box-shadow:  0 6px 15px rgba(0,0,0,0.4);
+    }
+    .br-text {
+    margin-left: 70px;
+    color: black; 
+    max-width: 100%; }
+    .br-text p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        text-align: left;
+    }
+    .br-text h3{
+        font-size: 70px;
+        font-weight: lighter;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .br{
+        margin: 20px;
+    }
+    .box{
+        display: block;
+        text-decoration: none;
+        padding: 30px;
+        margin: 10px;
+        background-color: #A8DADC;
+        border-radius: 25px;
+        transition:transform 0.6s ease-in-out; 
+    }
+    .box:hover{
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+    .content{ 
+        display: flex;
+        align-items: center;
+        color: #FFB6B9;
+    }
+    .content iframe{
+        flex-shrink: 0;
+        border-radius: 25px;
+        border-color: 2px #FFB6B9 solid;
+        transition:transform 0.6s ease;
+        align-items: center;
+    }
+    .content iframe:hover{
+        
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .navigation-arrows {
+    display: flex;
+    justify-content: left;
+    align-items: right;
+    align-items: center;
+    gap: 50px;
+    margin-left: 80px;
+    margin-top: 40px; /* Space above the arrows */
+}
+
+.back-arrow, .forward-arrow {
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #A8DADC;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-arrow:hover, .forward-arrow:hover {
+    background-color: #8dd6d9;
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+            </style>
+    </head>
+    <body>
+        <section class="page1">
+            <h1><span>Branding</span> is not just a logo. It’s<br> the feeling and experience <br>people have with your product.</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#sanatic">Sanatic: A Sports Accessories Brand</a></li>
+                    <li><a href="#tastynuts">Tasty Nuts: A Dry Fruit company</a></li>
+                </ul>
+            </section>
+
+        <section id="sanatic">
+            <h1 class="heading">Sanatic: A Sports Accessories Brand</h1>
+            <div class="sanatic-img">
+            <iframe src="https://drive.google.com/file/d/1xnkJ6NOmpOavHyX62b0JcLpOvYs3bl4h/preview" width="600" height="50" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1ZG5yqzNGgyeCOOR2OCzcfOdIISgg1gno/preview" width="800" height="50" allow="autoplay"></iframe>
+            </div><p>A Brand Story</p>
+            
+            <div class="grid">
+                <iframe src="https://drive.google.com/file/d/1GVTfvoEZOwVVRg8BhOVsx9BG6n0yRdU6/preview" width="340" height="480" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1Ne6wDBG9Qwf5WCBloMGG0pwGITYRR60Q/preview" width="400" height="480" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1N7dpT9QyTzdprwXAUp3rw6qmvLFxmFYq/preview" width="340" height="480" allow="autoplay"></iframe>
+            </div>
+            
+        </section>
+
+        <section id="tastynuts">
+            <h1 class="heading">Tasty Nuts: A Dry Fruit company</h1>
+            <div class="br">
+                <a href="https://www.behance.net/gallery/208432719/Tasty-Nuts-Logo-Design" class="box">
+                    <div class="content">
+                        <iframe src="https://drive.google.com/file/d/1yBf_cz6bip1C04K-TaJ8gxvajSk5_bVQ/preview" width="350" height="340" allow="autoplay"></iframe>
+                <div class="br-text">
+                    <h3>Tasty Nuts</h3>
+                    <p>Indulge in nature's finest delicacies, where exquisite flavors and superior quality intertwine, creating a luxurious experience that elevates every occasion with wholesome goodness. Click to view detailed project on Behance.</p>
+                </div></div></a>
+            </div>
+        </section><br><br><br><br><br>
+        <div class="navigation-arrows">
+            <a href="../index.html" class="back-arrow"><</a>
+            <a href="UI-Design.html" class="forward-arrow">></a>
+        </div>
+
+    </body>
+</html>

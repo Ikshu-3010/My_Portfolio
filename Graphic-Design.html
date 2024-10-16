@@ -1,0 +1,359 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Graphic-Design</title>
+        <style>
+        html{
+            zoom: 0.9;
+            scroll-behavior: smooth;
+            cursor: default;
+        }
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+       
+        .page1{
+            background-color: black;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            font-family: Montserrat sans-serif;
+        }
+        span{
+            color: #FFB6B9;
+            opacity: 0;
+            display: inline-block;
+            animation: typewriter 0.5s forwards;
+        }
+        span:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        span:nth-child(2){
+            animation-delay: 0.3s;
+        }
+        @keyframes typewriter {
+  to {
+    opacity: 1;
+  }
+}
+
+        
+        h1{
+            font-family: Abril-Fatface;
+            font-size: 8vw;
+            color: white;
+            background-color: black;
+            padding: 5vh 6vw 0 6vw;
+            text-align: left;
+            line-height: 1.2;
+            border-radius: 20px;
+        }
+        h2{
+    font-weight: lighter;
+    font-size: 4vw;
+    padding-left: 5vw;}
+
+        nav{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 90px;
+    
+    
+}
+.nav-list{
+    display: inline-flex;
+    gap: 250px;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+.nav-list li{
+    position: relative;
+}
+.nav-list li a{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    gap: 50px;
+    line-height: 1.5;
+    transition: 0.75s ease;
+}
+.nav-list li a:hover{
+    color: #FFB6B9;
+}
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    background-color: #FFB6B9;
+    bottom: -2px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-list a:hover::after {
+    width: 100%;
+  }
+.heading{
+    padding-bottom: 30px;
+    font-size: 75px;
+    font-weight: bold;
+}
+.package-design-grid{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px;
+    gap: 2vw;
+    margin-bottom: 0px;
+    margin: 5vh 5vw;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.moodboard .mockup .ideation{
+    text-align: center;
+    margin-bottom: 40px;
+    width: 30%;
+}
+.pd{
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.pd:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+h2{
+    font-weight:250;
+    font-size: 42px;
+    padding-left: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin: 150px;
+}
+.grid{
+    display: flex;
+            align-items: flex-start;
+            gap: 5vw;
+            
+            margin: 0 auto;
+            padding: 90px;
+            background-color: #A8DADC;
+            border-radius: 20px;
+}
+.grid iframe{
+    border-radius: 20px;
+    max-width: 1200px;
+}
+.grid iframe:hover{
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.text-grid{
+    max-width: 1500px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 23px;
+    text-decoration: none;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.row1 iframe{
+    border: 4px solid #FFB6B9;
+    transition: transform 0.6s ease;
+}
+.row1 iframe:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.sm{
+    text-align: center;
+    font-size: 25px;
+    line-height: 36px;
+    text-decoration: none;
+    margin: 30px;
+    padding-top: 30px;
+}
+.sm span{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.row iframe{
+    border: #FFB6B9 4px solid;
+}
+.row iframe:hover{
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+footer{
+    margin-left: 100px;
+    color: black;
+    padding: 40px;
+    font-family: Abril-Fatface;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 1300px;
+    font-size: 20px;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  80% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+.end{
+    text-decoration: underline;
+}
+.navigation-arrows {
+    display: flex;
+    justify-content:left;
+    align-items: right;
+    align-items: center;
+    gap: 50px;
+    margin-left: 80px;
+    margin-top: 40px; 
+}
+
+.back-arrow, .forward-arrow {
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #A8DADC;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-arrow:hover, .forward-arrow:hover {
+    background-color: #8dd6d9;
+    transform: scale(1.1); 
+}
+
+
+            </style>
+    </head>
+    <body>
+        <section class="page1">
+            <h1><span class="graphic">Graphic design</span>  will save the<br> world right after rock and<br> roll does.</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#packaging-design">Packaging Design</a></li>
+                    <li><a href="#social-media-posts">Social Media Posts</a></li>
+                    <li><a href="#illustrations">Illustrations</a></li>
+                </ul>
+            </nav>
+            </section>
+            <section id="packaging-design">
+                <h1 class="heading">Packaging Design</h1>
+                <div class="package-design-grid">
+                    <div class="moodboard">
+                    <iframe class="pd" src="https://drive.google.com/file/d/1BcJkbsyEEyc-_-UDAAaKnTx6c3rCyANv/preview" width="280" height="480" allow="autoplay"></iframe>
+                    <h3>Inspiration: Art Deco Movement</h3> </div>
+                    <div class="mockup">
+                    <iframe class="pd" src="https://drive.google.com/file/d/1kmbob2rVnFmZKMunBulNueKDoGY84oDM/preview" width="560" height="340" allow="autoplay"></iframe>
+                    <h3>Mockup</h3>
+                    </div>
+                    <div class="ideation">
+                    <iframe class="pd" src="https://drive.google.com/file/d/1Ctuu4ar68aDWTC-uzRI8sxfgYPLw2gbP/preview" width="340" height="480" allow="autoplay"></iframe>
+                    <h3>Ideations</h3>
+                    </div>
+                </div>
+                <h2><i>Firecracker package design</i></h2>
+            </section>
+            <section class="about-pd">
+                <div class="grid">
+                    <iframe src="https://drive.google.com/file/d/1wcBpIV_5oxWbK5kGlV8n2pwc4R854sQr/preview"  height="460" allow="autoplay"></iframe>
+                    <div class="text-grid">
+                        <p>Some problems in the existing firecrackers packaging include:<br><br>
+                            1. High amount of waste generated <br>2. Poor quality packaging <br>3. Bad packaging design <br>4. Design is absolutely chaotic and has an absence of hierarchy. </p>
+                            <a href="https://www.behance.net/gallery/190649443/Package-Design">Check out more here</a><br><br>
+                            <p>From its outset, Art Deco was influenced by the bold geometric forms of cubism and the vienna succession; the bright colors of Fauvism and of the Ballets Russes; the updated craftsmanship of the furniture of the eras of Louis XVI, and the exoticized styles of China, India, Egypt and other countries. </p>
+                            <p>The main aim of the assignment is to understand how my design helps in solving the existing firecracker packaging design. The design is not chaotic, and the relevant information is present and can be easily understood as to what is being sold. The design makes absolute sense. The placement, the color and the relevance to the theme.</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="social-media-posts">
+                <h1 class="heading">Social Media Posts</h1>
+                <div class="row1">
+                    <iframe src="https://drive.google.com/file/d/17sT6kZpmp0zHX4SJhgws9nGtajAUJ57N/preview" width="280" height="280" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1fu9aGCI3AV50dhA6Jj9Sqq7mJUsKRhti/preview" width="280" height="280" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1mrKGaJAwN1DFwQAkTQh__qCYC4AyP-XR/preview" width="280" height="280" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1mm3MjdnDK609NfwcjjygRoPClEps4Oh2/preview" width="280" height="280" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1mWMAGjIgDpDcpenqB9docpWNFLo8-0tE/preview" width="280" height="280" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1AsXOkMlaU6LuJJW1bfgYlKP2eEYHPyqO/preview" width="280" height="280" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/15W7bJSL-XQHEpbaJDeHctb8r19kMv11W/preview" width="280" height="280" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/18Umr2N3qkZfm3ENDSCwccz_wvsbV146w/preview" width="280" height="280" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1MUfuCk7VIarcbaDD0upZohmd_82WJvHQ/preview" width="280" height="280" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/16BbISkeTaQJWBjLGXgEK2GAlYPvQ4xpX/preview" width="280" height="280" allow="autoplay"></iframe>
+                </div>
+                <p class="sm">Designed Social Media Posts for a social media marketing company 
+                    <a href="https://www.instagram.com/thetechmatic/"><span>Techmatic</span></a>, a luxury dry fruit company called
+                    <a href="https://www.instagram.com/the_tastynuts/"><span>Tasty Nuts</span></a> and diamond company called
+                    <a href="https://www.instagram.com/alaknandadiamond/"><span>Alaknanda Diamonds</span></a>
+                </p>
+            </section>
+
+            <section id="illustrations">
+                <h1 class="heading">Illustrations</h1>
+                <div class="row">
+                    <iframe src="https://drive.google.com/file/d/1JLmD3LPxloeL-5VdF1pMgU1ZDVoKkn5O/preview" width="260" height="480" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1fJQP9EI6m9S-glLb22jr1kF4WMhMnV_f/preview" width="260" height="480" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/11H9qQ5k6wL3lDsXOwpc_k9ccdXMhWoZF/preview" width="260" height="480" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1NNtzMhPkJmO2bndCfghMcTOex00_hrRT/preview" width="260" height="480" allow="autoplay"></iframe>
+                    <div class="column">
+                        <iframe src="https://drive.google.com/file/d/1xFSlvxTeT1WzRMhOZyjBD_pmbEP46Fky/preview" width="230" height="230" allow="autoplay"></iframe>
+                        <iframe src="https://drive.google.com/file/d/1jJrj4sXk5LUuQvC5RyzEYFDtlvgA_Mia/preview" width="235" height="230" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <p class="sm">
+                    <a href="https://www.behance.net/gallery/191977563/Calender-Project-2024"><span class="end">Check out more here</span></a>
+                </p>
+            </section><br><br>
+            <footer>
+                
+                    
+                </div>
+            </footer><br><br>
+            <div class="navigation-arrows">
+                <a href="../index.html" class="back-arrow"><</a>
+                <a href="Interior-Design.html" class="forward-arrow">></a>
+            </div>
+
+    </body>
+</html>
+
+ 
